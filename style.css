@@ -1,0 +1,176 @@
+.main{
+  width:900px ;
+  height: 600px;
+  background: url(image/istockphoto.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 50px auto;
+  position: relative;
+  border: 2px solid #6fc1cc;
+}
+.main .bike{
+  height: 150px;
+  background: transparent;
+  position: absolute;
+  left: 0;
+  top: 80%;
+  transform: translateY(-70%);
+  animation: bike 10s linear infinite;
+
+}
+
+@keyframes bike{
+  0%{
+      left: 0%;
+      top: 80%;
+
+  }
+  50%{
+     left: 30%;
+     top: 80%;
+     z-index: 1;
+  }
+  51%{
+      z-index: -1;
+  }
+  100%{
+      z-index: -1;
+  }
+  
+}
+.main .police{
+  height: 150px;
+  background: transparent;
+  position: absolute;
+  right: 0;
+  top: 80%;
+  transform: translateY(-80%);
+  animation: police 10s linear infinite;
+}
+@keyframes police{
+  0%{
+      right: 0%;
+      top: 80%;
+
+  }
+  60%{
+      right: 25%;
+      top: 80%;
+      z-index: 1;
+  }
+  61%{
+      
+      z-index:-1 ;
+  }
+  
+  100%{
+      z-index: -1;
+  }
+}
+.main .bike2{
+  height: 150px;
+  background: transparent;
+  position: absolute;
+  right: 0%;
+  top: 80%;
+  transform: translateY(-70%);
+  animation: bike2 10s linear infinite;
+}
+@keyframes bike2{
+  0%{
+      right: 0;
+      top: 80%;
+      z-index: -1;
+
+  }
+  50%{
+      right: 50%;
+      top: 80%;
+      z-index: -1;
+
+  }
+  51%{
+      right: 50%;
+      top: 80%;
+      z-index: 1;
+  }
+  100%{
+      right: 80%;
+      top: 80%;
+      z-index: 1;
+  }
+}
+.main .car2{
+  height: 150px;
+  background: transparent;
+  position: absolute;
+  right: 0;
+  top: 80%;
+  transform: translateY(-70%);
+  animation: car2 10s linear infinite;
+}
+@keyframes car2{
+  0%{
+      left: 0%;
+      z-index: -1;
+
+  }
+  60%{
+      left: 45%;
+      z-index: -1;
+  }
+  61%{
+      left: 45%;
+      z-index: 1 ;
+  }
+  
+  100%{
+      left: 75%;
+      z-index: 1;
+  }
+}
+
+/* --------animition----------- */
+
+
+.main2{
+  width: 900px;
+  height: 600px;
+  border: 2px solid rgb(0, 0, 0);
+  margin: 50px auto;
+  position: relative;
+}
+
+.main2 .one{
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background: black;
+  left: 0;
+  top: 0;
+  animation: abcd 5s linear infinite;
+}
+
+@keyframes abcd{
+  0%{
+    left: 0;
+    top: 0;
+  }
+
+  25%{
+    left: 100%;
+    top: 0;
+    transform: translateX(-100%);
+  }
+
+  50%{
+    left: 100%;
+    top: 100%;
+    transform: translateX(-100%) translateY(-100%);
+  }
+  75%{
+    left: 0;
+    top: 100%;
+    transform: translateY(-100%);
+  }
+}
